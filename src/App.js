@@ -1,13 +1,13 @@
 import Navigation from "./components/Navigation";
 import Main from "./components/Main";
-import Login from "./components/Login";
+import LoginPage from "./components/logged-out/LoginPage";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
       <Main />
-      <Login />
+      <LoginPage />
     </div>
   );
 }
