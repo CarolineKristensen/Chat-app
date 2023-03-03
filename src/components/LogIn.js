@@ -1,11 +1,12 @@
 import React from "react";
 
-function LogIn() {
+function Login() {
     return (
         <div>
-            <p>Logga in</p>
+            <h1>Chat App</h1>
+            <h3>Logga in för att chatta</h3>
         </div>
     )
 }
 
-export default LogIn;
+export default Login;
