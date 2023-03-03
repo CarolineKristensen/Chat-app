@@ -9,9 +9,6 @@ function Login() {
 
     return (
         <>
-            <Form onSubmit={handleSubmit} id="loginForm">
-
-            </Form>
         </>
     )
 }
