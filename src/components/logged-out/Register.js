@@ -7,7 +7,7 @@ import {
 function Register() {
 
     return (
-        <div>
+        <div className="registerDiv">
             <Form>
                 <Form.Group controlId="formUsername">
                     <Form.Label>Användarnamn</Form.Label>

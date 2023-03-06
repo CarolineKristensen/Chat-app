@@ -7,7 +7,7 @@ import {
 function Login() {
 
     return (
-        <div>
+        <div className="loginDiv">
             <Form>
                 <Form.Group controlId="formUsername">
                     <Form.Label>Användarnamn</Form.Label>
