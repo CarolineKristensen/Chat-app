@@ -1,6 +1,5 @@
 import React from "react";
 import {
-    Container,
     Form,
     Button,
 } from "react-bootstrap";
@@ -8,15 +7,15 @@ import {
 function Login() {
 
     return (
-        <Container>
+        <div>
             <Form>
                 <Form.Group controlId="formUsername">
                     <Form.Label>Användarnamn</Form.Label>
-                    <Form.Control type="" placeholder="Skriv användarnamn..." required/>
+                    <Form.Control type="" placeholder="Användarnamn..." required/>
                 </Form.Group>
                 <Form.Group controlId="formPassword">
                     <Form.Label>Lösenord</Form.Label>
-                    <Form.Control type="password" placeholder="Skriv lösenord..." required/>
+                    <Form.Control type="password" placeholder="Lösenord..." required/>
                 </Form.Group>
                 <p id="forgotPwd">
                     <a href="/">Glömt lösenordet?</a>
@@ -30,7 +29,7 @@ function Login() {
                     </p>
                 </div>
             </Form>
-        </Container>
+        </div>
     )
 }
 

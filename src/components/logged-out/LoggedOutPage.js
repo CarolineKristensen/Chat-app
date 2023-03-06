@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import {
     Container,
-    //Row,
-    //Col,
-    //Button,
     Tab,
     Tabs
 } from "react-bootstrap";
@@ -15,7 +12,11 @@ function LoggedOutPage() {
 
     return (
         <Container>
-            <h1 className="text-center mb-4">Du är utloggad</h1>
+            {key == "login" ? (
+                <h1 className="text-center">Logga in</h1>
+            ): (
+                <h1 className="text-center">Registrera dig</h1>
+            )}
             <Tabs
             defaultActiveKey="login"
              id="loginRegister"
@@ -24,10 +25,10 @@ function LoggedOutPage() {
              className="mb-3"
              justify
             >
-                <Tab eventKey="login" title="Logga in">
+                <Tab eventKey="login" title="Inloggning">
                     <Login />
                 </Tab>
-                <Tab eventKey="register" title="Registrera">
+                <Tab eventKey="register" title="Registrering">
                     <Register />
                 </Tab>
             </Tabs>
