@@ -12,7 +12,7 @@ function LoggedOutPage() {
     const [key, setKey] = useState("login");
 
     return (
-        <Container className="loggedOutDiv shadow pb-4">
+        <Container className="loggedOutDiv shadow pb-4 px-3">
             {key === "login" ? (
                 <h1 className="text-center py-4">Logga in</h1>
             ): (
