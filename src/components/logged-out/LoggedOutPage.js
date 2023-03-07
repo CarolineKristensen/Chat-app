@@ -12,24 +12,17 @@ function LoggedOutPage() {
     const [key, setKey] = useState("login");
 
     return (
-        <Container className="loggedOutDiv">
+        <Container className="loggedOutDiv shadow pb-4">
             {key === "login" ? (
-                <h1 className="text-center">Logga in</h1>
+                <h1 className="text-center py-4">Logga in</h1>
             ): (
-                <h1 className="text-center">Registrera dig</h1>
+                <h1 className="text-center py-4">Registrera dig</h1>
             )}
-            <Tabs
-            defaultActiveKey="login"
-             id="loginRegister"
-             activeKey={key}
-             onSelect={(k) => setKey(k)}
-             className="mb-3"
-             justify
-            >
-                <Tab eventKey="login" title="Inloggning">
+            <Tabs defaultActiveKey="login" id="loginRegister" activeKey={key} onSelect={(k) => setKey(k)} justify>
+                <Tab className="loginDiv" eventKey="login" title="Inloggning">
                     <Login />
                 </Tab>
-                <Tab eventKey="register" title="Registrering">
+                <Tab className="registerDiv" eventKey="register" title="Registrering">
                     <Register />
                 </Tab>
             </Tabs>
