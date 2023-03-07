@@ -1,6 +1,7 @@
 import React from "react";
 import {
     Form,
+    InputGroup,
     Button,
 } from "react-bootstrap";
 
@@ -11,7 +12,14 @@ function Login() {
             <Form>
                 <Form.Group controlId="formUsername">
                     <Form.Label>Användarnamn</Form.Label>
-                    <Form.Control type="" placeholder="Användarnamn..." required/>
+                    <InputGroup>
+                        <InputGroup.Prepend>
+                            <InputGroup.Text>
+                            
+                            </InputGroup.Text>
+                        </InputGroup.Prepend>
+                        <Form.Control type="" placeholder="Användarnamn..." required/>
+                    </InputGroup>
                 </Form.Group>
                 <Form.Group controlId="formPassword">
                     <Form.Label>Lösenord</Form.Label>

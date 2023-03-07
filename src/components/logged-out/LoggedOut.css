@@ -1,3 +1,8 @@
+.loggedOutDiv {
+    background-color: dimgrey;
+    height: 450px;
+}
+
 .loginDiv {
     background-color: springgreen;
 }

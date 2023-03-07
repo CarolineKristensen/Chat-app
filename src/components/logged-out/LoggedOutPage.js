@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./LoggedOut.css";
 import {
     Container,
     Tab,
@@ -11,8 +12,8 @@ function LoggedOutPage() {
     const [key, setKey] = useState("login");
 
     return (
-        <Container>
-            {key == "login" ? (
+        <Container className="loggedOutDiv">
+            {key === "login" ? (
                 <h1 className="text-center">Logga in</h1>
             ): (
                 <h1 className="text-center">Registrera dig</h1>
