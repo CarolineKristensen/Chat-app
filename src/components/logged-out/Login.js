@@ -2,7 +2,7 @@ import React from "react";
 import {
     Form,
     InputGroup,
-    Button,
+    Button
 } from "react-bootstrap";
 
 function Login() {
@@ -13,17 +13,20 @@ function Login() {
                 <Form.Group controlId="formUsername">
                     <Form.Label>Användarnamn</Form.Label>
                     <InputGroup>
-                        <InputGroup.Prepend>
-                            <InputGroup.Text>
-                            
-                            </InputGroup.Text>
-                        </InputGroup.Prepend>
+                        <InputGroup.Text>
+                            <img id="usernameIcon" src="../images/person-fill.svg" alt="Username icon" width="20px" />
+                        </InputGroup.Text>
                         <Form.Control type="" placeholder="Användarnamn..." required/>
                     </InputGroup>
                 </Form.Group>
                 <Form.Group controlId="formPassword">
                     <Form.Label>Lösenord</Form.Label>
-                    <Form.Control type="password" placeholder="Lösenord..." required/>
+                    <InputGroup>
+                        <InputGroup.Text>
+                            <img id="passwordIcon" src="../images/key-fill.svg" alt="Password icon" width="20px" />
+                        </InputGroup.Text>
+                        <Form.Control type="password" placeholder="Lösenord..." required/>
+                    </InputGroup>
                 </Form.Group>
                 <p id="forgotPwd">
                     <a href="/">Glömt lösenordet?</a>
