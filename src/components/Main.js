@@ -1,13 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
+//import React from "react";
 import "./CSS/main.css";
 import Login from "./Login";
+import { Register } from "./Register";
+
 
 function Main() {
+    const [currentForm, setCurrentForm] = useState('login');
+
+    const toggleForm = (formName) => {
+        setCurrentForm(formName);
+    }
+
     return (
-        <div>
-            <h1 id="app-name">Welcome to Chat-App!</h1>
+        <div class="App">
             <div class="login-box">
-                <Login />
+                {
+                currentForm === "login" ? <Login onFormSwitch = {toggleForm}/> : <Register onFormSwitch = {toggleForm}/>
+                }
             </div>
             
         </div>
