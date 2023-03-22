@@ -12,7 +12,8 @@ function Contacts() {
             <ul className="contactList">
                 {contacts.map((user) => (
                     <li className="contactItem">
-                        {user.firstName} {user.lastName}
+                        <p>{user.firstName} {user.lastName}</p>
+                        <span id="contactUsername">({user.userName})</span>
                     </li>
                 ))}
             </ul>

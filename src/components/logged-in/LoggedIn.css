@@ -20,7 +20,12 @@
 }
 
 .contactItem {
+    display: flex;
     background-color: aliceblue;
     list-style-type: none;
-    padding: 5px 0px;
+}
+
+#contactUsername {
+    color: rgb(134, 134, 134);
+    padding-left: 20px;
 }
