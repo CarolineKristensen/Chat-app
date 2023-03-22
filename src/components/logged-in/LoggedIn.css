@@ -1,0 +1,26 @@
+.loggedInDiv {
+    width: 100%;
+}
+
+.contacts {
+    background-color: aqua;
+}   
+
+.chat {
+    background-color: blueviolet;
+}
+
+.contactBox {
+    background-color: aliceblue;
+    display: inline-flex;
+}
+
+.contactList {
+    padding: 0;
+}
+
+.contactItem {
+    background-color: aliceblue;
+    list-style-type: none;
+    padding: 5px 0px;
+}

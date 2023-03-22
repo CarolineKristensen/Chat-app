@@ -1,0 +1,23 @@
+import React from "react";
+
+function Contacts() {
+    const contacts = [
+        { firstName: "Felicia", lastName: "Bergflo", userName: "feliciabergflo"},
+        { firstName: "Caroline", lastName: "Kristensen", userName: "carolinekristensen"}
+    ];
+
+    return(
+        <div>
+            Kontakter
+            <ul className="contactList">
+                {contacts.map((user) => (
+                    <li className="contactItem">
+                        {user.firstName} {user.lastName}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
+export default Contacts;
